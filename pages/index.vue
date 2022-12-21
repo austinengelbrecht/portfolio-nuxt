@@ -1,10 +1,11 @@
 <template>
   <HomeTheIntro />
+  <HomeMyExperience />
 </template>
 
 <script lang="ts">
 definePageMeta({
-  layout: "home",
+  layout: "default",
   name: "home",
   title: "Austin Engelbrecht",
 });

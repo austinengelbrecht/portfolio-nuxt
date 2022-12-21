@@ -11,7 +11,7 @@
     <div class="">
       <img
         class="intro-img"
-        src="@/assets/images/austin_engelbrecht.jpg"
+        src="../../assets/images/austin_engelbrecht.jpg"
         alt="Austin Engelbrecht posing on a hiking trail"
         width="500"
         height="500"
