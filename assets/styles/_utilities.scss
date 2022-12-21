@@ -1,0 +1,89 @@
+@import "colors";
+
+/* -- Maps -- */
+// Color Scheme
+$colorscheme: (
+  "mint": (
+    xlight: $mint-1,
+    light: $mint-2,
+    base: $mint-3,
+    dark: $mint-4,
+    xdark: $mint-5,
+  ),
+  "coral": (
+    xlight: $coral-1,
+    light: $coral-2,
+    base: $coral-3,
+    dark: $coral-4,
+    xdark: $coral-5,
+  ),
+  "blueyonder": (
+    xlight: $blueyonder-1,
+    light: $blueyonder-2,
+    base: $blueyonder-3,
+    dark: $blueyonder-4,
+    xdark: $blueyonder-5,
+  ),
+  "royalyellow": (
+    xlight: $royalyellow-1,
+    light: $royalyellow-2,
+    base: $royalyellow-3,
+    dark: $royalyellow-4,
+    xdark: $royalyellow-5,
+  ),
+);
+
+// Modifier Function - This function is more robust, but needs to be tested
+// @mixin modifiers(
+//   $map,
+//   $attribute,
+//   $prefix: ".",
+//   $separator: "-",
+//   $base: "base"
+// ) {
+//   @each $key, $value in $map {
+//     @at-root {
+//       #{&}#{if($key != $base, #{$prefix}#{$key}, '') } {
+//         @if type-of($value) == "map" {
+//           @include modifiers($value, $attribute, $separator);
+//         } @else {
+//           #{$attribute}: $value;
+//         }
+//       }
+//     }
+//   }
+// }
+// Color Modifier - used to access the colorscheme map
+@mixin color-modifiers(
+  $attribute: "",
+  $prefix: "-",
+  $separator: "-",
+  $base: "base"
+) {
+  @each $name, $color in $colorscheme {
+    &#{$prefix}#{$name} {
+      @each $tone, $hex in $color {
+        &#{if($tone != $base, #{$separator}#{$tone}, '')} {
+          #{$attribute}: $hex;
+        }
+      }
+    }
+  }
+}
+
+//Background Colors utility classes
+.bg {
+  @include color-modifiers(background-color);
+}
+
+//Screen Reader Only - Makes text only visable to a screen reader user
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}

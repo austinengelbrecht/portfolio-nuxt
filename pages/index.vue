@@ -1,13 +1,12 @@
 <template>
-  <header>
-    <TheHeader />
-  </header>
-
-  <slot />
+  <HomeTheIntro />
+  <HomeMyExperience />
 </template>
 
-<script>
-export default {
-  name: "Homepage",
-};
+<script lang="ts">
+definePageMeta({
+  layout: "default",
+  name: "home",
+  title: "Austin Engelbrecht",
+});
 </script>
