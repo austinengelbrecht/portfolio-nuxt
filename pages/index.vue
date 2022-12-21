@@ -1,7 +1,5 @@
 <template>
-  <section>
-    <IntroHello />
-  </section>
+  <section><TheIntro /></section>
 </template>
 
 <script lang="ts">
