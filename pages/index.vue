@@ -1,5 +1,5 @@
 <template>
-  <section><TheIntro /></section>
+  <HomeTheIntro />
 </template>
 
 <script lang="ts">
