@@ -1,6 +1,7 @@
 <template>
   <HomeTheIntro />
   <HomeMyExperience />
+  <HomeContactMe />
 </template>
 
 <script lang="ts">
