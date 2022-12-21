@@ -3,7 +3,7 @@
     <h2 class="sr-only">The Footer</h2>
     <img
       class="footer-graphic"
-      src="~/assets/images/me_graphic.png"
+      src="../assets/images/me_graphic.png"
       alt="A vector graphic that looks like me"
       width="100"
       height="100"
@@ -13,8 +13,8 @@
 
     <ul class="footer-socials">
       <li v-for="item in links" class="footer-socials-links">
-        <a :key="url" :href="item.url" target="_blank">
-          <Icon :icon="item.icon" class="icon" />
+        <a :key="item.url" :href="item.url" target="_blank">
+          <Icon :name="item.icon" class="icon" />
           <span class="sr-only"> {{ item.linkText }}</span>
         </a>
       </li>
@@ -30,9 +30,6 @@
 
 <script>
 export default {
-  components: {
-    Icon,
-  },
   data() {
     return {
       links: [
