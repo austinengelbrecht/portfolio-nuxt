@@ -78,6 +78,7 @@ export default {
           toolsTitle: "What I Want To Learn",
           toolsDesc: [
             "Affinity Designer",
+            "Elm",
             "Node.js",
             "Nuxt",
             "Pixi.js",
