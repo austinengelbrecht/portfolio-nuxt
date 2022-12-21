@@ -3,7 +3,7 @@
     <h2 class="sr-only">The Footer</h2>
     <img
       class="footer-graphic"
-      src="@/assets/images/me_graphic.png"
+      src="~/assets/images/me_graphic.png"
       alt="A vector graphic that looks like me"
       width="100"
       height="100"
@@ -29,8 +29,6 @@
 </template>
 
 <script>
-import { Icon } from "@iconify/vue";
-
 export default {
   components: {
     Icon,
@@ -65,7 +63,7 @@ export default {
   margin-top: 10rem;
 
   &-graphic {
-    border: 2px solid $black;
+    border: 2px solid #000;
     border-radius: 100%;
   }
 

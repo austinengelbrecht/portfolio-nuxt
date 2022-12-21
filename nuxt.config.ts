@@ -16,7 +16,7 @@ export default defineNuxtConfig({
   buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ["nuxt-icon"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
