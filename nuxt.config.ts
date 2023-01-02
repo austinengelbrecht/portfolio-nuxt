@@ -16,7 +16,7 @@ export default defineNuxtConfig({
   buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["nuxt-icon", "@nuxtjs/axios"],
+  modules: ["nuxt-icon"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
