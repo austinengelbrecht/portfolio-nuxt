@@ -1,0 +1,7 @@
+// Flexbox Grid
+@mixin flex-grid($columns, $space) {
+  > * {
+    box-sizing: border-box;
+    width: calc(1 / $columns * 100% - (1 - 1 / $columns) * $space);
+  }
+}
