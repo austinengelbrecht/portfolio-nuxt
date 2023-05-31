@@ -1,3 +1,3 @@
 <template>
-  <p>Hey</p>
+  <p class="">Hey</p>
 </template>
