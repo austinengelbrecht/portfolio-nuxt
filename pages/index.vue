@@ -1,3 +1,3 @@
 <template>
-  <p>Hey</p>
+  <p class="bg-space-1">Hey</p>
 </template>
