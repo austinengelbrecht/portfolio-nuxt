@@ -1,3 +1,4 @@
 <template>
-  <p class="">Hey</p>
+  <HomeHero />
+  <HomeAbout />
 </template>

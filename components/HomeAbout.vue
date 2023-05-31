@@ -1,7 +1,3 @@
----
-import HeroButton from "./HeroButton.astro";
----
-
 <template>
   <section class="about">
     <img
@@ -28,6 +24,8 @@ import HeroButton from "./HeroButton.astro";
 </template>
 
 <script>
+import HeroButton from "./HeroButton.vue";
+
 export default {
   components: [HeroButton],
 };

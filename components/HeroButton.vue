@@ -3,5 +3,5 @@
 </template>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/homepage/hero-button.scss";
+@import "@/assets/styles/partials/homepage/hero-button.scss";
 </style>
