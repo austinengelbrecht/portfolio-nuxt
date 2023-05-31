@@ -1,14 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-export default {
-  build: {
-    postcss: {
-      postcssOptions: {
-        plugins: {
-          tailwindcss: {},
-          autoprefixer: {},
-        },
-      },
+export default defineNuxtConfig({
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
     },
   },
-  css: ["@/assets/styles/tailwind.scss"],
-};
+  css: ["@/assets/styles/global.scss"],
+});
