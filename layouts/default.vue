@@ -1,5 +1,6 @@
 <template>
   <body>
+    <SiteHeader />
     <slot />
   </body>
 </template>
