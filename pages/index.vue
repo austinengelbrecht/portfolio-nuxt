@@ -3,6 +3,8 @@
     <HomeHero />
     <HomeAbout />
   </div>
+
+  <HomeProjects />
 </template>
 
 <style lang="scss">
