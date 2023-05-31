@@ -2,6 +2,8 @@
   <body>
     <SiteHeader />
     <slot />
+
+    <SiteFooter />
   </body>
 </template>
 
