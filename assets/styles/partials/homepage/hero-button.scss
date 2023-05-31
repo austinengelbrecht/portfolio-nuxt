@@ -1,0 +1,43 @@
+.hero-link {
+  background-color: #03001c;
+  padding: 0 0 0 1.5rem;
+  border: 1px solid #cda715;
+  border-radius: 2rem;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease-in;
+  color: #efedff;
+  text-decoration: none;
+
+  &::after {
+    display: inline-block;
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-color: #cda715;
+    border-radius: 100%;
+    margin-left: 0.75rem;
+    background-image: url("../../../assets/svg/arrow-right-dark.svg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+  }
+
+  &:hover {
+    background-color: #cda715;
+    color: #03001c;
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    transform: translateY(0px);
+    box-shadow: none;
+    background-color: #a28511;
+    transition: transform 0s;
+
+    &::after {
+      background-color: #a28511;
+    }
+  }
+}
