@@ -5,6 +5,7 @@
   </div>
 
   <HomeProjects />
+  <HomeGallery />
 </template>
 
 <style lang="scss">
