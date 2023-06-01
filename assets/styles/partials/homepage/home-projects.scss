@@ -1,0 +1,164 @@
+$md: 600px;
+$lg: 1000px;
+
+$duration: 700ms;
+$timing: cubic-bezier(0.19, 1, 0.22, 1);
+
+$imageIds: "sitelogo", "toxictournamentslogo", "catfacts", "birdsofpreyguide";
+
+.projects {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: transparent;
+
+  @media (min-width: $md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+
+  text-align: center;
+  background-color: #301e67;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
+    0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: $md) {
+    height: 350px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform calc($duration * 1.5) $timing;
+    pointer-events: none;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0.1) 30%,
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.4) 60%,
+      rgba(0, 0, 0, 0.5) 70%,
+      rgba(0, 0, 0, 0.6) 80%,
+      rgba(0, 0, 0, 0.7) 85%,
+      rgba(0, 0, 0, 0.8) 90%,
+      rgba(0, 0, 0, 0.9) 95%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    transform: translateY(-50%);
+    transition: transform calc($duration * 2) $timing;
+  }
+
+  @each $id in $imageIds {
+    $i: index($imageIds, $id);
+
+    &:nth-child(#{$i}):before {
+      background-image: url("@/assets/svg/projects/#{$id}.svg");
+    }
+  }
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform $duration $timing;
+  z-index: 1;
+
+  > * + * {
+    margin-top: 1rem;
+  }
+}
+
+.title {
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.copy {
+  font-size: 1.125rem;
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+}
+
+@media (hover: hover) and (min-width: $md) {
+  .card:after {
+    transform: translateY(0);
+  }
+
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+
+    > *:not(.title) {
+      opacity: 0;
+      transform: translateY(1rem);
+      transition: transform $duration $timing, opacity $duration $timing;
+    }
+  }
+
+  .card:hover,
+  .card:focus-within {
+    // align-items: center;
+
+    &:before {
+      transform: translateY(-4%);
+    }
+    &:after {
+      transform: translateY(-50%);
+    }
+
+    .content {
+      transform: translateY(0);
+
+      > *:not(.title) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: calc($duration / 8);
+      }
+    }
+  }
+
+  .card:focus-within {
+    &:before,
+    &:after,
+    .content,
+    .content > *:not(.title) {
+      transition-duration: 0s;
+    }
+  }
+}
