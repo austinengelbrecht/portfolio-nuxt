@@ -7,6 +7,7 @@
 
     <ul class="gallery">
       <li
+        class=""
         v-for="image in galleryImgs"
         :key="image.image"
         @click="
@@ -43,6 +44,7 @@ export default {
     return {
       isOpen: false,
       currentlySelected: "",
+      currentlySelectedAlt: "",
       currentlySelectedProject: "",
       currentlySelectedParagraphs: "",
 
