@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  props: { url, text },
+  props: ["url", "text"],
 };
 </script>
 

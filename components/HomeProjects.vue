@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <HomeSectionHeader
+    <SectionHeader
       heading="Current Projects"
       subtext="I'm passionate about web development and enjoy experimenting and growing with new technologies and techniques. Working on passion projects allows me to explore my creative side; while also building skills to learn and grow as a professional developer"
     />
@@ -57,11 +57,11 @@
 </template>
 
 <script>
-import HomeSectionHeader from "./HomeSectionHeader.vue";
+import SectionHeader from "./SectionHeader.vue";
 import SecondaryButton from "./SecondaryButton.vue";
 
 export default {
-  props: { HomeSectionHeader, SecondaryButton },
+  props: { SectionHeader, SecondaryButton },
 };
 </script>
 

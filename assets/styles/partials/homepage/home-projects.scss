@@ -85,7 +85,7 @@ $imageIds: "sitelogo", "toxictournamentslogo", "catfacts", "birdsofpreyguide";
     $i: index($imageIds, $id);
 
     &:nth-child(#{$i}):before {
-      background-image: url("../../../assets/svg/projects/#{$id}.svg");
+      background-image: url("@/assets/svg/projects/#{$id}.svg");
     }
   }
 }
