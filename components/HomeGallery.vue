@@ -51,7 +51,18 @@ export default {
       galleryImgs: [
         {
           image:
-            "https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/work/Promo_Page.webp?t=2023-05-10T00%3A51%3A16.943Z",
+            "https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/work/Communications_Page.webp?t=2023-06-06T01%3A49%3A30.293Z",
+          imageAlt:
+            "Screenshot of front-end work for a communication settings page for managing communication settings",
+          project: "Communications Page",
+          paragraphs: [
+            "With the addition of a new text promotion, the team decided to update our existing communication settings page. ",
+            "The page uses styled checkboxes to give users easy access to change their communication preferences. This page also has the ability to handle double opt-in emails and age verification for text sign-ups.",
+          ],
+        },
+        {
+          image:
+            "https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/work/Promo_Page.webp?t=2023-06-06T01%3A49%3A41.585Z",
           imageAlt:
             "Screenshot of front-end work for a promotional page for signing up to text notifications",
           project: "Text Promo Page",
