@@ -14,7 +14,7 @@
 <style lang="scss">
 .header {
   padding: 1.5rem 4rem;
-  border-bottom: 6px solid #301e67;
+  border-bottom: 3px solid #301e67;
 }
 
 .site-logo {
