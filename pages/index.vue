@@ -1,8 +1,10 @@
 <template>
-  <div class="intro">
+  <!-- <div class="intro">
     <HomeHero />
     <HomeAbout />
-  </div>
+  </div> -->
+
+  <HomeHeroNew />
 
   <HomeProjects />
   <HomeGallery />
