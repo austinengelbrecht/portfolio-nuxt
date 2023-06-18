@@ -1,6 +1,6 @@
 <template>
-  <section class="hero flex">
-    <div>
+  <section class="hero flex flex-wrap justify-between">
+    <div class="hero-img-container">
       <img
         class="hero-img"
         src="https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/austinengelbrecht.jpg"
@@ -15,8 +15,8 @@
         class=""
         src="../assets/svg/title_graphic.svg"
         alt="Graphic displaying 'Hi, I'm Austin'"
-        width="400"
-        height="249"
+        width="500"
+        height="311"
         aria-hidden="true"
       />
 
