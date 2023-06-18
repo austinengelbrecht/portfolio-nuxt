@@ -1,24 +1,26 @@
 <template>
-  <section>
-    <img
-      class="about-img"
-      src="https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/austinengelbrecht.jpg"
-      width="400"
-      height="400"
-      loading="lazy"
-    />
-
+  <section class="hero flex">
     <div>
       <img
-        class="hero-title-img"
+        class="hero-img"
+        src="https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/austinengelbrecht.jpg"
+        width="400"
+        height="400"
+        alt="A photo of Austin Engelbrecht outside"
+      />
+    </div>
+
+    <div class="hero-about">
+      <img
+        class=""
         src="../assets/svg/title_graphic.svg"
-        alt="Hi, I'm Austin"
-        width="715"
-        height="445"
+        alt="Graphic displaying 'Hi, I'm Austin'"
+        width="400"
+        height="249"
+        aria-hidden="true"
       />
 
-      <h2 class="about-heading">About Austin</h2>
-      <p class="about-content">
+      <p class="hero-about-content">
         While getting my Information Science degree, I found my passion for
         building websites and working in front-end code. I am a self-motivated
         developer striving to improve my skills, whether it's through online
@@ -31,4 +33,6 @@
   </section>
 </template>
 
-<style lagn="scss"></style>
+<style lang="scss" scoped>
+@import "@/assets/styles/partials/homepage/home-hero.scss";
+</style>

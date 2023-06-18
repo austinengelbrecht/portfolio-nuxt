@@ -1,0 +1,35 @@
+@import "../colors";
+
+.hero {
+  gap: 32px;
+  margin-bottom: 100px;
+
+  &-about {
+    max-width: 600px;
+  }
+
+  &-img {
+    position: relative;
+    border-radius: 8px;
+
+    &:before {
+      content: "";
+      width: 400px;
+      height: 400px;
+      background-color: $primary;
+      position: absolute;
+      left: 24px;
+      top: 24px;
+    }
+
+    &:after {
+      content: "";
+      width: 400px;
+      height: 400px;
+      background-color: $primary;
+      position: absolute;
+      left: 24px;
+      top: 24px;
+    }
+  }
+}
