@@ -1,46 +1,26 @@
 @import "../colors";
 
 .hero {
-  gap: 32px;
+  gap: 64px;
   margin: 8rem auto 10rem;
   max-width: 1200px;
-  padding: 0 1rem 0 2rem;
+  padding: 0 1rem;
 
   &-about {
     max-width: 500px;
+
+    &-img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 16px;
+    }
   }
 
   &-img {
     position: relative;
     border-radius: 8px;
     z-index: 1;
-  }
-
-  &-img-container {
-    position: relative;
-    border-radius: 8px;
-
-    &:before,
-    &:after {
-      border-radius: 8px;
-      content: "";
-      width: 400px;
-      height: 400px;
-      position: absolute;
-      z-index: 0;
-      display: block;
-    }
-
-    &:before {
-      background-color: $primary;
-      right: 24px;
-      top: 24px;
-    }
-
-    &:after {
-      background-color: $outer-space-4;
-      left: 24px;
-      top: -24px;
-    }
+    max-width: 100%;
+    height: auto;
   }
 }

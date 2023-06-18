@@ -1,18 +1,18 @@
 <template>
-  <section class="hero flex flex-wrap justify-between">
+  <section class="hero flex flex-wrap justify-center items-center">
     <div class="hero-img-container">
       <img
         class="hero-img"
-        src="https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/austinengelbrecht.jpg"
-        width="400"
-        height="400"
+        src="https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/homeheroimage.webp?t=2023-06-18T20%3A21%3A25.822Z"
+        width="488"
+        height="488 "
         alt="A photo of Austin Engelbrecht outside"
       />
     </div>
 
     <div class="hero-about">
       <img
-        class=""
+        class="hero-about-img"
         src="../assets/svg/title_graphic.svg"
         alt="Graphic displaying 'Hi, I'm Austin'"
         width="500"
