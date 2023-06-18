@@ -1,0 +1,32 @@
+@import "../colors";
+
+.hero {
+  gap: 64px;
+  margin: 8rem auto 5rem;
+  max-width: 1200px;
+  padding: 0 1rem 10rem;
+  border-bottom: 2px solid $outer-space-3;
+
+  &-about {
+    max-width: 500px;
+
+    &-img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 16px;
+    }
+  }
+
+  &-img {
+    position: relative;
+    border-radius: 8px;
+    z-index: 1;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 1080px) {
+    flex-direction: column-reverse;
+    margin: 5rem auto;
+  }
+}

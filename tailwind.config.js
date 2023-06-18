@@ -31,7 +31,7 @@ module.exports = {
   plugins: [],
   corePlugins: [
     "accessibility",
-    "alignContent",
+    "alignItems",
     "backgroundColor",
     "borderColor",
     "display",
