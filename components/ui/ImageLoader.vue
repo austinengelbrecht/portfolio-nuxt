@@ -1,6 +1,12 @@
 <template>
   <div>
-    <img :src="source" :alt="altText" :aria-hidden="hidden" />
+    <img
+      :src="source"
+      :alt="altText"
+      :aria-hidden="hidden"
+      :width="width"
+      :height="height"
+    />
   </div>
 </template>
 
@@ -21,6 +27,16 @@ export default {
       type: Boolean,
       default: true,
       required: true,
+    },
+    width: {
+      type: Integer,
+      default: 100,
+      required: false,
+    },
+    height: {
+      type: Integer,
+      default: 100,
+      required: false,
     },
   },
 };
