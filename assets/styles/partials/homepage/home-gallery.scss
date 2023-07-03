@@ -78,5 +78,9 @@
     margin: 1rem;
 
     cursor: pointer;
+
+    @media (max-width: 600px) {
+      margin: 0.5rem;
+    }
   }
 }
