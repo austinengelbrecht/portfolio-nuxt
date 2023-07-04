@@ -1,13 +1,15 @@
 <template>
-  <div class="modal-background" @click="$emit('resetImg')">
+  <div class="modal-background">
     <figure class="modal">
-      <img
-        class="modal-close"
-        src="@/assets/svg/x-circle.svg"
-        alt="Close Button"
-        width="32"
-        height="32"
-      />
+      <button class="modal-close" type="button" @click="$emit('resetImg')">
+        <img
+          src="@/assets/svg/x-circle.svg"
+          alt="Close Button"
+          width="32"
+          height="32"
+        />
+        <span class="sr-only">Close Modal</span>
+      </button>
       <div class="modal-img">
         <img
           class="w-[100%] h-auto"
