@@ -28,7 +28,7 @@
         constantly striving to learn and grow as a developer.
       </p>
 
-      <HeroButton url="/" text="Learn More" />
+      <HeroButton url="/aboutme" text="Learn More" />
     </div>
   </section>
 </template>
