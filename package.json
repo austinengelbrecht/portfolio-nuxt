@@ -12,7 +12,7 @@
     "@nuxtjs/supabase": "^0.3.7",
     "@types/node": "^18",
     "autoprefixer": "^10.4.14",
-    "nuxt": "^2.17.0",
+    "nuxt": "^3.6.1",
     "nuxt-vitest": "^0.6.2",
     "postcss": "^8.4.24",
     "sass": "^1.62.1",
