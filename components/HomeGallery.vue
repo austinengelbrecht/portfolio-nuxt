@@ -6,7 +6,7 @@
     />
 
     <ul class="gallery">
-      <li class="" v-for="image in galleryImgs" :key="image.image">
+      <li v-for="image in galleryImgs" :key="image.image">
         <button
           type="button"
           @click="
