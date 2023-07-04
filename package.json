@@ -6,7 +6,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest"
   },
   "devDependencies": {
     "@nuxtjs/supabase": "^0.3.7",
@@ -21,6 +22,7 @@
     "vitest": "^0.30.1"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.11"
+    "@pinia/nuxt": "^0.4.11",
+    "vitest-environment-nuxt": "^0.8.7"
   }
 }
