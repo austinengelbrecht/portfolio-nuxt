@@ -20,6 +20,7 @@
         finding a new trail to hike. I'm also currently learning how to
         fly-fish, which is an exciting challenge to keep me outdoors.
       </p>
+      <AboutCards />
     </section>
   </div>
 </template>
