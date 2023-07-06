@@ -12,7 +12,15 @@
       </p>
     </section>
 
-    <section></section>
+    <section>
+      <h2>Who I Am?</h2>
+      <p>
+        Outside of work I love learning new technology and tinkering with
+        electronics. I also enjoy playing casual video games with my friends, or
+        finding a new trail to hike. I'm also currently learning how to
+        fly-fish, which is an exciting challenge to keep me outdoors.
+      </p>
+    </section>
   </div>
 </template>
 
@@ -20,5 +28,9 @@
 .about {
   max-width: 70%;
   margin: 0 auto;
+
+  section {
+    margin-bottom: 4rem;
+  }
 }
 </style>
