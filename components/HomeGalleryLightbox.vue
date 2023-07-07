@@ -1,5 +1,5 @@
 <template>
-  <div class="modal-background"></div>
+  <div class="modal-background" @click="$emit('resetImg')"></div>
   <figure class="modal">
     <button class="modal-close" type="button" @click="$emit('resetImg')">
       <img
