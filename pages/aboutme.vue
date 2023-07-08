@@ -10,17 +10,32 @@
         little by little every day; finding myself naturally curious with a
         drive to continue growing my skills in web development.
       </p>
+      <p>
+        Professoinally, I primarily work with Elm and SCSS to build front-end
+        pages. While, ocassionally working with .NET Razor or React, when the
+        need arises.
+      </p>
+      <p>
+        I enjoy working in Vue and Nuxt on my personal projects. I find personal
+        projects are a great way to relax while also continuing to develop my
+        coding and web development skills.
+      </p>
     </section>
 
     <section>
-      <h2>Who I Am?</h2>
+      <h2>Outside of the Office</h2>
+
       <p>
-        Outside of work I love learning new technology and tinkering with
-        electronics. I also enjoy playing casual video games with my friends, or
-        finding a new trail to hike. I'm also currently learning how to
-        fly-fish, which is an exciting challenge to keep me outdoors.
+        Outside of work I have many different interests. I enjoy lifting
+        weights, and try to do so approx. 3 times a week. I also enjoy the
+        occasional hike to get outside and experience the beauty of nature. And
+        recently, I have been learning how to fly-fish on the weekends.
       </p>
-      <AboutCards />
+      <p>
+        When the weather doesn't let me get outside, I enojoy playing casual
+        video games with my friends. Or curling up on the couch and watching a
+        good movie or TV show.
+      </p>
     </section>
   </div>
 </template>
