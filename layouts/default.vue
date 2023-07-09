@@ -1,9 +1,9 @@
 <template>
   <body>
-    <SiteHeader />
+    <LayoutSiteHeader />
     <slot />
 
-    <SiteFooter />
+    <LayoutSiteFooter />
   </body>
 </template>
 

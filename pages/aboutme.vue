@@ -39,6 +39,13 @@
   </div>
 </template>
 
+<script setup>
+useSeoMeta({
+  title: "About Me",
+  description: "Learn more information about Austin Engelbrecht. ",
+});
+</script>
+
 <style lang="scss" scoped>
 .about {
   max-width: 70%;
