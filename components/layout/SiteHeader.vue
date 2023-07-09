@@ -1,5 +1,5 @@
 <template>
-  <header class="header flex flex-row">
+  <header class="header flex flex-row justify-between items-center">
     <nuxt-link to="/">
       <img
         src="https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/svg/sitelogo.svg"
@@ -8,6 +8,8 @@
         height="34"
       />
     </nuxt-link>
+
+    <LayoutSiteHeaderMenu />
   </header>
 </template>
 
@@ -15,6 +17,10 @@
 .header {
   padding: 1.5rem 4rem;
   border-bottom: 3px solid #301e67;
+
+  @media (max-width: 625px) {
+    padding: 1.5rem 1rem;
+  }
 }
 
 .site-logo {
