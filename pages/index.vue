@@ -5,8 +5,10 @@
 </template>
 
 <script setup>
-useHead({
+useSeoMeta({
   title: "Austin Engelbrecht | Front-end Developer",
+  description:
+    "Austin Engelbrecht is a Front-end developer, who is leveling up one day at a time.",
 });
 </script>
 

@@ -13,6 +13,8 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/supabase", "nuxt-vitest"],
   app: {
     head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
       title: "Austin Engelbrecht",
     },
   },

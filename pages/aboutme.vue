@@ -40,8 +40,9 @@
 </template>
 
 <script setup>
-useHead({
+useSeoMeta({
   title: "About Me",
+  description: "Learn more information about Austin Engelbrecht. ",
 });
 </script>
 
