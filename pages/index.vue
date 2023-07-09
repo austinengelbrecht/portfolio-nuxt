@@ -4,6 +4,12 @@
   <HomeGallery />
 </template>
 
+<script setup>
+useHead({
+  title: "Austin Engelbrecht | Front-end Developer",
+});
+</script>
+
 <style lang="scss">
 @import "@/assets/styles/partials/homepage/home-shared.scss";
 

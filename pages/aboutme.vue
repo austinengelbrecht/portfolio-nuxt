@@ -39,6 +39,12 @@
   </div>
 </template>
 
+<script setup>
+useHead({
+  title: "About Me",
+});
+</script>
+
 <style lang="scss" scoped>
 .about {
   max-width: 70%;
