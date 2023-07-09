@@ -1,9 +1,4 @@
 <template>
-  <!-- <div class="intro">
-    <HomeHero />
-    <HomeAbout />
-  </div> -->
-
   <HomeHeroNew />
 
   <HomeProjects />
