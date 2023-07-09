@@ -7,6 +7,7 @@
         width="81"
         height="34"
       />
+      <span class="sr-only">Home</span>
     </nuxt-link>
 
     <LayoutSiteHeaderMenu />
