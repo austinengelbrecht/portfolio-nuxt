@@ -18,7 +18,7 @@
             )
           "
         >
-          <img class="gallery-img" :src="image.image" alt="image.imageAlt" />
+          <img class="gallery-img" :src="image.image" :alt="image.imageAlt" />
           <span class="sr-only">Expand image to learn more details</span>
         </button>
       </li>
