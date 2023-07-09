@@ -1,7 +1,6 @@
 <template>
   <HomeHeroNew />
 
-  <HomeProjects />
   <HomeGallery />
 </template>
 
