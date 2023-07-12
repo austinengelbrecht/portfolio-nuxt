@@ -18,7 +18,12 @@
             )
           "
         >
-          <img class="gallery-img" :src="image.image" :alt="image.imageAlt" />
+          <img
+            class="gallery-img"
+            :src="image.image"
+            :alt="image.imageAlt"
+            loading="lazy"
+          />
           <span class="sr-only">Expand image to learn more details</span>
         </button>
       </li>
