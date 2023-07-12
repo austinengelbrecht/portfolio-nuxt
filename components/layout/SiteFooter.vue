@@ -4,7 +4,7 @@
       <p class="font-bold capitalize">Connect with me</p>
       <ul class="flex flex-row gap-4 justify-start">
         <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/austinengelbrecht target="_blank" rel="noopener noreferrer">
             <img
               class="w-[2rem] h-auto"
               src="https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/svg/github-logo.svg"
@@ -13,7 +13,11 @@
           </a>
         </li>
         <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/austinengelbrecht/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               class="w-[2rem] h-auto"
               src="https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/svg/linkedin-logo.svg"
@@ -22,7 +26,7 @@
           </a>
         </li>
         <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a href="https://codepen.io/airwalk111" target="_blank" rel="noopener noreferrer">
             <img
               class="w-[2rem] h-auto"
               src="https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/svg/codepen-logo.svg"
