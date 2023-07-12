@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer flex justify-between items-center mt-[6rem] p-[2rem]">
+  <footer class="footer flex justify-between items-center p-[2rem]">
     <div>
       <p class="font-bold capitalize">Connect with me</p>
       <ul class="flex flex-row gap-4 justify-start">

@@ -1,9 +1,12 @@
 <template>
   <body>
-    <SiteHeader />
-    <slot />
+    <LayoutSiteHeader />
 
-    <SiteFooter />
+    <section class="main-content">
+      <slot />
+    </section>
+
+    <LayoutSiteFooter />
   </body>
 </template>
 
@@ -21,5 +24,13 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.main-content {
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 4rem;
 }
 </style>

@@ -21,14 +21,14 @@
       />
 
       <p class="hero-about-content">
-        While getting my Information Science degree, I found my passion for
-        building websites and working in front-end code. I am a self-motivated
-        developer striving to improve my skills, whether it's through online
-        courses, attending conferences, or working on personal projects, I am
-        constantly striving to learn and grow as a developer.
+        While getting my Information Science & Technology degree, I found my
+        passion for building websites and working in front-end code. I am a
+        self-motivated developer striving to improve my skills, whether it's
+        through online courses, attending conferences, or working on personal
+        projects, I am constantly striving to learn and grow as a developer.
       </p>
 
-      <HeroButton url="/" text="Learn More" />
+      <HeroButton url="/aboutme" text="Learn More" />
     </div>
   </section>
 </template>

@@ -1,14 +1,16 @@
 <template>
-  <!-- <div class="intro">
-    <HomeHero />
-    <HomeAbout />
-  </div> -->
-
   <HomeHeroNew />
 
-  <HomeProjects />
   <HomeGallery />
 </template>
+
+<script setup>
+useSeoMeta({
+  title: "Austin Engelbrecht | Front-end Developer",
+  description:
+    "Austin Engelbrecht is a Front-end developer, who is leveling up one day at a time.",
+});
+</script>
 
 <style lang="scss">
 @import "@/assets/styles/partials/homepage/home-shared.scss";

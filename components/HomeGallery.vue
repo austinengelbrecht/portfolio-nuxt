@@ -6,20 +6,21 @@
     />
 
     <ul class="gallery">
-      <li
-        class=""
-        v-for="image in galleryImgs"
-        :key="image.image"
-        @click="
-          expandImage(
-            image.image,
-            image.imageAlt,
-            image.project,
-            image.paragraphs
-          )
-        "
-      >
-        <img class="gallery-img" :src="image.image" alt="image.imageAlt" />
+      <li v-for="image in galleryImgs" :key="image.image">
+        <button
+          type="button"
+          @click="
+            expandImage(
+              image.image,
+              image.imageAlt,
+              image.project,
+              image.paragraphs
+            )
+          "
+        >
+          <img class="gallery-img" :src="image.image" :alt="image.imageAlt" />
+          <span class="sr-only">Expand image to learn more details</span>
+        </button>
       </li>
     </ul>
 

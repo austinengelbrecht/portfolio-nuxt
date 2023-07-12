@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  /* Resetting the default box model */
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  /* Resetting the default font styles */
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+
+  /* Resetting the default background and cursor */
+  background: none;
+  cursor: pointer;
+
+  /* Resetting the default outline styles */
+  // outline: none;
+  // outline-offset: 0;
+
+  /* Resetting the default user-select behavior */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  /* Resetting the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
