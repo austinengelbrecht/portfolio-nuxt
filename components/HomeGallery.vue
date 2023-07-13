@@ -26,10 +26,6 @@
           />
           <span class="sr-only">Expand image to learn more details</span>
         </button>
-
-        <div class="gallery-card-text">
-          <span>Title Text</span>
-        </div>
       </li>
     </ul>
 
