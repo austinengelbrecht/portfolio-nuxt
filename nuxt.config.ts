@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/styles/global.scss"],
-  modules: ["@nuxtjs/supabase", "nuxt-vitest"],
+  modules: ["@nuxtjs/supabase", "nuxt-vitest", "nuxt-gtag"],
   app: {
     head: {
       charset: "utf-8",
@@ -24,5 +24,8 @@ export default defineNuxtConfig({
         },
       ],
     },
+  },
+  gtag: {
+    id: "G-TLFP2M1E3V",
   },
 });
