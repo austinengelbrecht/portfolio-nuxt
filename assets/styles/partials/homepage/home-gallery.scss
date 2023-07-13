@@ -22,7 +22,8 @@
   &-card {
     position: relative;
 
-    &:hover {
+    &:hover,
+    > button:focus {
       .gallery-card-img {
         scale: 1;
         cursor: pointer;
