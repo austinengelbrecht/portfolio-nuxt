@@ -19,12 +19,30 @@
     @include flex-grid(1, 16px);
   }
 
-  &-img {
-    height: auto;
-    width: 100%;
+  &-card {
+    position: relative;
 
-    &:hover {
-      cursor: pointer;
+    &:hover,
+    > button:focus {
+      .gallery-card-img {
+        scale: 1;
+        cursor: pointer;
+      }
+    }
+
+    &-img {
+      height: auto;
+      width: 100%;
+      border-radius: 8px;
+      scale: 90%;
+      transition: all 0.3s ease-in-out;
+    }
+
+    @media (hover: none) {
+      .gallery-card-img {
+        scale: 1;
+        filter: grayscale(0%);
+      }
     }
   }
 }
