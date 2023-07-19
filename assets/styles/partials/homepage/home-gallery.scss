@@ -80,6 +80,7 @@
   max-width: 832px;
   animation: modal-animation;
   animation-duration: 0.25s;
+  border: none;
 
   @media (max-width: 832px) {
     top: 2rem;

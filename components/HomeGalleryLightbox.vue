@@ -1,6 +1,10 @@
 <template>
-  <div class="modal-background" @click="$emit('resetImg')"></div>
-  <figure class="modal">
+  <div
+    class="modal-background"
+    @click="$emit('resetImg')"
+    @keydown.esc="$emit('resetImg')"
+  ></div>
+  <dialog class="modal">
     <button class="modal-close" type="button" @click="$emit('resetImg')">
       <img
         src="@/assets/svg/x-circle.svg"
@@ -19,11 +23,11 @@
         height="800"
       />
     </div>
-    <figcaption class="modal-content">
+    <div class="modal-content">
       <h3>{{ title }}</h3>
       <p v-for="paragraph in paragraphs" :key="paragraph">{{ paragraph }}</p>
-    </figcaption>
-  </figure>
+    </div>
+  </dialog>
 </template>
 
 <script>
