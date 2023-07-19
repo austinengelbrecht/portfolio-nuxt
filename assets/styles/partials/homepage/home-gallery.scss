@@ -58,6 +58,8 @@
   z-index: 10;
   background-color: rgb(0, 0, 0, 0.85);
   backdrop-filter: blur(30px);
+  animation: modal-animation;
+  animation-duration: 0.25s;
 }
 
 .modal {
@@ -76,6 +78,8 @@
   left: calc(50% - 416px);
   overflow: scroll;
   max-width: 832px;
+  animation: modal-animation;
+  animation-duration: 0.25s;
 
   @media (max-width: 832px) {
     top: 2rem;
@@ -108,5 +112,14 @@
     @media (max-width: 600px) {
       margin: 0.5rem;
     }
+  }
+}
+
+@keyframes modal-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
