@@ -58,6 +58,8 @@
   z-index: 10;
   background-color: rgb(0, 0, 0, 0.85);
   backdrop-filter: blur(30px);
+  animation: modal-animation;
+  animation-duration: 0.25s;
 }
 
 .modal {
@@ -77,7 +79,7 @@
   overflow: scroll;
   max-width: 832px;
   animation: modal-animation;
-  animation: 0.25s;
+  animation-duration: 0.25s;
 
   @media (max-width: 832px) {
     top: 2rem;
