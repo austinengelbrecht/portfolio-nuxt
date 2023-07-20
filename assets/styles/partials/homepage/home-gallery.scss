@@ -69,14 +69,11 @@
   align-items: center;
   background-color: $outer-space-3;
   border-radius: 10px;
-  max-width: 95%;
   padding: 1rem;
   margin: auto;
   position: fixed;
   z-index: 100;
   top: calc(50% - 216px);
-  left: calc(50% - 416px);
-  overflow: scroll;
   max-width: 832px;
   animation: modal-animation;
   animation-duration: 0.25s;
