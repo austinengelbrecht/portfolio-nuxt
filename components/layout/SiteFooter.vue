@@ -56,9 +56,11 @@
       <p class="uppercase">Leving up one day at a time</p>
     </div>
 
-    <div class="">
-      <p><small>Designed and built by Austin Engelbrecht</small></p>
-      <p class="text-center"><small>© 2023</small></p>
+    <div>
+      <p class="m-0">
+        <small>Designed and built by Austin Engelbrecht</small>
+      </p>
+      <p class="text-center m-0"><small>© 2023</small></p>
     </div>
   </footer>
 </template>
