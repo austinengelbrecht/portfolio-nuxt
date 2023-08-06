@@ -57,6 +57,16 @@ export default {
       galleryImgs: [
         {
           image:
+            "https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/work/Account_Messages.webp?t=2023-08-06T05%3A54%3A08.666Z",
+          imageAlt:
+            "Screenshot of developer work for a communication settings page for managing communication settings",
+          project: "Account Messages Page",
+          paragraphs: [
+            "I was the primary developer of the redesign for the Account Messages page, aimed at enhancing the mobile experience and page interaction. I implemented new functionality, created page interactions, and refined the page styles to align with the site's overall design. ",
+          ],
+        },
+        {
+          image:
             "https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/work/Communications_Page.webp?t=2023-06-06T01%3A49%3A30.293Z",
           imageAlt:
             "Screenshot of front-end work for a communication settings page for managing communication settings",
