@@ -73,7 +73,7 @@ export default {
           project: "Communications Page",
           paragraphs: [
             "With the addition of a new text promotion, the team decided to update our existing communication settings page. ",
-            "The page uses styled checkboxes to give users easy access to change their communication preferences. This page also has the ability to handle double opt-in emails and age verification for text sign-ups.",
+            "The page uses styled check-boxes to give users easy access to change their communication preferences. This page also can handle double opt-in emails and age verification for text sign-ups.",
           ],
         },
         {
@@ -83,8 +83,8 @@ export default {
             "Screenshot of front-end work for a promotional page for signing up to text notifications",
           project: "Text Promo Page",
           paragraphs: [
-            "Apart of a new offering for text notifications about order updates, account messages, and other promotions this page was built to encourage users signing up. After signing up users would also receive a promotional code that could be used in checkout.",
-            "After the new promotinal page went live, we saw an increase of 8% in page engagment and an increase of 6% in successful sign-ups.",
+            "Apart of a new offering for text notifications about order updates, account messages, and other promotions this page was built to encourage users to sign up. After signing up users would also receive a promotional code that could be used in checkout.",
+            "After the new promotional page went live, we saw an increase of 8% in page engagement and an increase of 6% in successful sign-ups.",
           ],
         },
         {
@@ -93,8 +93,8 @@ export default {
           imageAlt: "Screenshot of front-end work of an account dashboard",
           project: "Account Dashboard",
           paragraphs: [
-            "What originally began as a Feature Innovation Challenge project to show customer their recent orders; the project quickly grew into an entire account dashboard and new account navigation.",
-            "Soon the project featured user's product arrival notifcations, recently viewed products, and general account information. User's are able to quickly find important information about their orders and account.",
+            "What originally began as a Feature Innovation Challenge project to show customers their recent orders; the project quickly grew into an entire account dashboard and new account navigation.",
+            "Soon the project featured user's product arrival notifications, recently viewed products, and general account information. Users can quickly find important information about their orders and account.",
           ],
         },
         {
@@ -104,7 +104,7 @@ export default {
             "Screenshot of front-end work of a restricted items modal in checkout",
           project: "Restricted Items Modal",
           paragraphs: [
-            "Working in the firearms and shooting industry, there are lots of laws and restrictions that have to be planned for. The modal was designed to appear when a user attempts to add a restricted item to their cart, and it informs the user that the item cannot be purchased due to legal restrictions or age verification requirements. ",
+            " Navigating the firearms and shooting sector involves careful consideration of numerous laws and regulations. Our system incorporates an age restriction notification, which pops up when a user tries to add a restricted item to their cart. This alert informs them that the purchase isn't possible due to either legal restrictions or the need for age verification.",
           ],
         },
         {
@@ -113,7 +113,7 @@ export default {
           imageAlt: "Screenshot of an unsupported browser page",
           project: "Unsupported Broswers",
           paragraphs: [
-            "Ocassionally, users forget to keep their browsers updated. In order to give user the best experiece with new technology and security, we have to block them from continuing to our site.",
+            "Occasionally, users forget to keep their browsers updated. To give the user the best experience with new technology and security, we have to block them from continuing to our site.",
             "This unsupported browser page was built to show a little easter egg graphic and options to help guide users to how to update their browsers before shopping.",
           ],
         },
@@ -134,8 +134,8 @@ export default {
             "Screenshot of front-end work for a user wish list creation",
           project: "Wish Lists Sign In",
           paragraphs: [
-            "Returning users often forget to sign back in before being able to view some account features. With the help of a designer, we built a small signin component to guide users to sign in to view their wish lists.",
-            "By providing this clear visual cue and easy-to-follow instructions, we saw improvements to wisht list engagement from users.",
+            "Returning users often forget to sign back in before being able to view some account features. With the help of a designer, we built a small sign in component to guide users to sign in to view their wish lists.",
+            "By providing this clear visual cue and easy-to-follow instructions, we saw improvements to wish list engagement from users.",
           ],
         },
       ],
