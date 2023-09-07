@@ -57,16 +57,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.contact {
-  display: flex;
-  flex-direction: column;
-  max-width: 700px;
-
-  &-input {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 32px;
-  }
-}
-</style>
+<style lang="scss" scoped></style>
