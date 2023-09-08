@@ -4,7 +4,7 @@
       <h1>Contact Me</h1>
       <p class="mb-20">I would love to hear from you.</p>
 
-      <form @prevent.default="validateForm">
+      <form @submit.prevent="testSBData">
         <div class="form-field">
           <input id="name" type="text" v-model="name" class="contact-input" />
           <label for="name" class="label"> Your Name</label>
@@ -32,6 +32,8 @@
 </template>
 
 <script>
+// const supabase = useSupabaseClient();
+
 export default {
   data() {
     return {
@@ -43,7 +45,18 @@ export default {
   methods: {
     submitForm() {},
     validateForm() {},
+    // async testSBData() {
+    //   const { data, error } = await supabase
+    //     .from("Contact")
+    //     .insert([{ name: this.name, email: this.email, message: this.message }])
+    //     .select;
+
+    //   if (data) {
+    //     console.log(data);
+    //   }
+    // },
   },
+  computed: {},
 };
 </script>
 
