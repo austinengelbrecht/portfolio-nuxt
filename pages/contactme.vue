@@ -20,7 +20,7 @@
             id="message"
             type="text"
             v-model="message"
-            class="contact-input"
+            class="contact-input-message"
           />
           <label for="message" class="label">Your Message</label>
         </div>
