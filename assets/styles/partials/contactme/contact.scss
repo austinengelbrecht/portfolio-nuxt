@@ -1,3 +1,5 @@
+@import "../colors";
+
 .contactme {
   max-width: 700px;
   position: relative;
@@ -11,15 +13,15 @@
 }
 
 .contact-input {
-  display: block;
+  // display: block;
   width: 100%;
-  height: 36px;
-  border-width: 0 0 2px 0;
-  border-color: #000;
-  font-family: Lusitana, serif;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
+  height: 32px;
+  // border-width: 0 0 2px 0;
+  // border-color: #000;
+  // font-family: Lusitana, serif;
+  // font-size: 18px;
+  // line-height: 26px;
+  // font-weight: 400;
 
   &:focus {
     outline: none;
@@ -28,20 +30,21 @@
   &:focus,
   &.not-empty {
     + .label {
-      transform: translateY(-24px);
+      transform: translateY(-32px) translateX(-16px);
+      color: $content;
     }
   }
 }
 
 .label {
   position: absolute;
-  left: 20px;
-  bottom: 11px;
-  font-family: Lusitana, serif;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #888;
+  left: 16px;
+  bottom: 10px;
+  // font-family: Lusitana, serif;
+  // font-size: 18px;
+  // line-height: 26px;
+  // font-weight: 400;
+  color: $outer-space-1;
   cursor: text;
-  transition: transform 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
