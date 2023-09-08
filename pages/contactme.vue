@@ -5,40 +5,24 @@
       <p>I would love to hear from you.</p>
 
       <form @prevent.default="validateForm" class="contact-form">
-        <div>
+        <div class="form-field">
+          <input id="name" type="text" v-model="name" class="contact-input" />
           <label for="name" class="label"> Your name</label>
-          <input
-            id="name"
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            v-model="name"
-            class="contact-input"
-          />
         </div>
 
-        <div>
+        <div class="form-field">
+          <input id="email" type="text" v-model="email" class="contact-input" />
           <label for="email" class="label">Your email</label>
-          <input
-            id="email"
-            type="text"
-            name="email"
-            placeholder="Your Email"
-            v-model="email"
-            class="contact-input"
-          />
         </div>
 
-        <div>
-          <label for="message" class="label">Your Message</label>
+        <div class="form-field">
           <input
             id="message"
             type="text"
-            name="message"
-            placeholder="Your Message"
             v-model="message"
             class="contact-input"
           />
+          <label for="message" class="label">Your Message</label>
         </div>
 
         <button type="submit">Submit Form</button>
