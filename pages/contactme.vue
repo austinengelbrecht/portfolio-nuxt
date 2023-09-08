@@ -1,43 +1,46 @@
 <template>
-  <section>
-    <h1>Contact Me</h1>
-    <p>I would love to hear from you.</p>
+  <section class="flex justify-center p-4">
+    <div>
+      <h1>Contact Me</h1>
+      <p>I would love to hear from you.</p>
 
-    <form @prevent.default="validateForm">
-      <div class="contact">
-        <label class="contact-input">
-          Your name
+      <form @prevent.default="validateForm" class="">
+        <div>
+          <label for="name" class="contact-input"> Your name</label>
           <input
+            id="name"
             type="text"
             name="name"
             placeholder="Your Name"
             v-model="name"
           />
-        </label>
+        </div>
 
-        <label class="contact-input">
-          Your email
+        <div>
+          <label for="email" class="contact-input">Your email</label>
           <input
+            id="email"
             type="text"
             name="email"
             placeholder="Your Email"
             v-model="email"
           />
-        </label>
+        </div>
 
-        <label class="contact-input">
-          Your message
+        <div>
+          <label for="message" class="contact-input">Your Message</label>
           <input
+            id="message"
             type="text"
             name="message"
             placeholder="Your Message"
             v-model="message"
           />
-        </label>
-      </div>
+        </div>
 
-      <button type="submit">Submit Form</button>
-    </form>
+        <button type="submit">Submit Form</button>
+      </form>
+    </div>
   </section>
 </template>
 
