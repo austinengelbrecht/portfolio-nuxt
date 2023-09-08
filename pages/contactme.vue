@@ -6,21 +6,34 @@
 
       <form @submit.prevent="testSBData">
         <div class="form-field">
-          <input id="name" type="text" v-model="name" class="contact-input" />
+          <input
+            id="name"
+            type="text"
+            v-model="name"
+            class="contact-input"
+            :class="{ 'not-empty': nameHasInput }"
+          />
           <label for="name" class="label"> Your Name</label>
         </div>
 
         <div class="form-field">
-          <input id="email" type="text" v-model="email" class="contact-input" />
+          <input
+            id="email"
+            type="email"
+            v-model="email"
+            class="contact-input"
+            :class="{ 'not-empty': emailHasInput }"
+          />
           <label for="email" class="label">Your Email</label>
         </div>
 
         <div class="form-field">
-          <input
+          <textarea
             id="message"
             type="text"
             v-model="message"
             class="contact-input-message"
+            :class="{ 'not-empty': messageHasInput }"
           />
           <label for="message" class="label">Your Message</label>
         </div>
@@ -56,7 +69,17 @@ export default {
     //   }
     // },
   },
-  computed: {},
+  computed: {
+    nameHasInput() {
+      return this.name.length > 0 ? true : false;
+    },
+    emailHasInput() {
+      return this.email.length > 0 ? true : false;
+    },
+    messageHasInput() {
+      return this.message.length > 0 ? true : false;
+    },
+  },
 };
 </script>
 
