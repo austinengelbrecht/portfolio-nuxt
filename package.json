@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",
+    "@vue/test-utils": "^2.4.1",
     "vitest-environment-nuxt": "^0.8.7"
   }
 }
