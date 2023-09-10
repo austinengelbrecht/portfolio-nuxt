@@ -9,7 +9,7 @@
           <input
             id="name"
             type="text"
-            v-model="name"
+            v-model="formData.name"
             class="contact-input"
             :class="{ 'not-empty': nameHasInput }"
           />
@@ -20,7 +20,7 @@
           <input
             id="email"
             type="email"
-            v-model="email"
+            v-model="formData.email"
             class="contact-input"
             :class="{ 'not-empty': emailHasInput }"
           />
@@ -31,7 +31,7 @@
           <textarea
             id="message"
             type="text"
-            v-model="message"
+            v-model="formData.message"
             class="contact-input-message"
             :class="{ 'not-empty': messageHasInput }"
           />
@@ -48,15 +48,27 @@
 export default {
   data() {
     return {
-      name: "",
-      email: "",
-      message: "",
+      formData: {
+        name: "",
+        email: "",
+        message: "",
+      },
       loading: "Submit", // Submit, Submitting, Submitted
+      formErrors: {},
     };
   },
   methods: {
-    validateForm() {},
+    validateForm() {
+      // this.errors = {},
+      // if(this.name == "") {
+      // }
+    },
     submitForm() {},
+    resetForm() {
+      this.name = "";
+      this.email = "";
+      this.message = "";
+    },
   },
   computed: {
     nameHasInput() {
