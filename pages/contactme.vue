@@ -59,15 +59,32 @@ export default {
   },
   methods: {
     validateForm() {
-      // this.errors = {},
-      // if(this.name == "") {
-      // }
+      this.formErrors = {};
+
+      if (!this.formData.name) {
+        this.formErrors.name = "Please enter your name";
+      }
+
+      if (!this.formData.email) {
+        this.formErrors.email = "Please enter a email";
+      } else if (!this.isValidEmail(this.formData.email)) {
+        this.formErrors.email = "Invalid email";
+      }
+
+      if (!this.formData.message) {
+        this.formErrors.message = "Please enter a message";
+      }
+    },
+    isValidEmail(email) {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailPattern.test(email);
     },
     submitForm() {},
     resetForm() {
       this.name = "";
       this.email = "";
       this.message = "";
+      this.formErrors = {};
     },
   },
   computed: {
