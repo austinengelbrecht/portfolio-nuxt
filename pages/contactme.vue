@@ -4,7 +4,7 @@
       <h1>Contact Me</h1>
       <p class="mb-20">I would love to hear from you.</p>
 
-      <form @submit.prevent="validateForm()">
+      <form @submit.prevent="submitForm()">
         <div class="form-field">
           <input
             id="name"
@@ -81,21 +81,21 @@ export default {
     },
     submitForm() {},
     resetForm() {
-      this.name = "";
-      this.email = "";
-      this.message = "";
+      this.formData.name = "";
+      this.formData.email = "";
+      this.formData.message = "";
       this.formErrors = {};
     },
   },
   computed: {
     nameHasInput() {
-      return this.name.length > 0 ? true : false;
+      return this.formData.name.length > 0 ? true : false;
     },
     emailHasInput() {
-      return this.email.length > 0 ? true : false;
+      return this.formData.email.length > 0 ? true : false;
     },
     messageHasInput() {
-      return this.message.length > 0 ? true : false;
+      return this.formData.message.length > 0 ? true : false;
     },
   },
 };
