@@ -51,11 +51,11 @@ export default {
       name: "",
       email: "",
       message: "",
-      loading: 'Submit', // Submit, Submitting, Submitted
+      loading: "Submit", // Submit, Submitting, Submitted
     };
   },
   methods: {
-    validateForm(),
+    validateForm() {},
     submitForm() {},
   },
   computed: {
