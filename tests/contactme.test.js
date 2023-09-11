@@ -3,7 +3,7 @@ import { mount } from "@vue/test-utils";
 
 import contactme from "../pages/contactme.vue";
 
-describe("Contact Form Validation", () => {
+describe("ContactMe.vue", () => {
   it("Form is invalid if no name if provided", () => {
     const wrapper = mount(contactme);
 
