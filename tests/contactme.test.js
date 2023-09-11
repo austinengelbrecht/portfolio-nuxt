@@ -1,12 +1,19 @@
-import { it, expect, describe } from "vitest";
-import { mount } from "@vue/test-utils";
+import { it, expect, describe, afterAll, beforeAll } from "vitest";
+import { mount, shallowMount } from "@vue/test-utils";
 
 import contactme from "../pages/contactme.vue";
 
-describe("ContactMe.vue", () => {
-  it("Form is invalid if no name if provided", () => {
-    const wrapper = mount(contactme);
+let wrapper;
 
-    expect(wrapper.vm).toBeTruthy();
+beforeAll(() => {
+  wrapper = shallowMount(contactme);
+});
+
+describe("ContactMe.vue", () => {
+  it("ContactMe.vue should mount to page", () => {
+    // let wrapper = mount(contactme);
+
+    const mounted = wrapper.vm;
+    expect(mounted).toBeTruthy();
   });
 });
