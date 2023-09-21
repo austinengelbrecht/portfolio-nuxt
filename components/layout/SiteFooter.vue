@@ -13,7 +13,10 @@
               class="w-[2rem] h-auto"
               src="https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/svg/github-logo.svg"
               alt="GitHub Logo"
+              aria-hidden="true"
+              loading="lazy"
             />
+            <span class="sr-only">Visit my Github</span>
           </a>
         </li>
         <li>
@@ -26,7 +29,10 @@
               class="w-[2rem] h-auto"
               src="https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/svg/linkedin-logo.svg"
               alt="Linkedin Logo"
+              aria-hidden="true"
+              loading="lazy"
             />
+            <span class="sr-only">Visit my Linkedin</span>
           </a>
         </li>
         <li>
@@ -39,7 +45,10 @@
               class="w-[2rem] h-auto"
               src="https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/svg/codepen-logo.svg"
               alt="Codepen Logo"
+              aria-hidden="true"
+              loading="lazy"
             />
+            <span class="sr-only">Visit my Codepen</span>
           </a>
         </li>
       </ul>
@@ -51,7 +60,10 @@
           class="h-[48px] w-auto"
           src="https://npjmxgrfqyrxnbnmltws.supabase.co/storage/v1/object/public/images/svg/sitelogo.svg"
           alt="Austin Engelbrecht Site Logo"
+          aria-hidden="true"
+          loading="lazy"
         />
+        <span class="sr-only">Homepage</span>
       </a>
       <p class="uppercase">Leving up one day at a time</p>
     </div>
